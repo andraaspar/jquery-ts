@@ -369,7 +369,8 @@ module jQuery {
 
 
 
-		triggerHandler(eventType: string, extraParameters?: any[]): any;
+		triggerHandler(eventType: string, extraParameters?: any): any;
+		triggerHandler(event: IEvent, extraParameters?: any): any;
 
 
 
