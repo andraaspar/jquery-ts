@@ -1,8 +1,0 @@
-{
-  "name": "jquery-d-ts",
-  "global": true,
-  "files": [
-    "src/$.d.ts",
-    "src/jQuery.d.ts"
-  ]
-}
