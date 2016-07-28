@@ -286,7 +286,6 @@ declare module jQuery {
 
 		toggleClass(className: string, flag?: boolean): IInstance;
 		toggleClass(fn: IClassToggleFunction, flag?: boolean): IInstance;
-		toggleClass(flag?: boolean): IInstance;
 
 
 
@@ -584,8 +583,7 @@ declare module jQuery {
 
 
 
-		animate(properties: any, duration?: number, easing?: string, complete?: Function): IInstance;
-		animate(properties: any, duration?: string, easing?: string, complete?: Function): IInstance;
+		animate(properties: any, duration?: number | string, easing?: string, complete?: Function): IInstance;
 		animate(properties: any, options: IAnimationOptions): IInstance;
 
 

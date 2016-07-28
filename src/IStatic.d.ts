@@ -70,10 +70,6 @@ declare module jQuery {
 		
 		
 		
-		when(deferred: IPromise, ...deferreds: IPromise[]): IPromise;
-		
-		
-		
 		fn: IInstance;
 		
 		
@@ -100,6 +96,10 @@ declare module jQuery {
 		
 		
 		
+		escapeSelector(selector: string): string;
+		
+		
+		
 		extend(deep: boolean, target: any, object1: any, ...objectN: any[]): any;
 		extend(target: any, ...objectN: any[]): any;
 		
@@ -110,6 +110,7 @@ declare module jQuery {
 		
 		
 		get(url: string, data?: any, success?: IGetSuccessFunction, dataType?: string): IXHR;
+		get(settings?: IAJAXSettings): IXHR;
 		
 		
 		
@@ -182,15 +183,12 @@ declare module jQuery {
 		
 		
 		
-		parseJSON(json: string): any;
-		
-		
-		
 		parseXML(data: string): XMLDocument;
 		
 		
 		
 		post(url: string, data?: any, success?: IGetSuccessFunction, dataType?: string): IXHR;
+		post(settings?: IAJAXSettings): IXHR;
 		
 		
 		
@@ -203,6 +201,10 @@ declare module jQuery {
 		queue(element: Element, queueName: string, newQueue: any[]): IInstance;
 		queue(element: Element, queueName: string, callback: Function): IInstance;
 		queue(element: Element, queueName?: string): any[];
+		
+		
+		
+		readyException(error);
 		
 		
 		
@@ -222,10 +224,10 @@ declare module jQuery {
 		
 		
 		
-		unique<T extends any[]>(array: T): T;
+		uniqueSort<T extends any[]>(arr: T): T;
 		
 		
 		
-		when(deferred: IDeferred, ...deferreds: IDeferred[]): IPromise;
+		when(...deferreds: IPromise[]): IPromise;
 	}
 }

@@ -19,6 +19,7 @@ declare module jQuery {
 		bubbles: boolean;
 		button: number;
 		cancelable: boolean;
+		char: string;
 		charCode: number;
 		clientX: number;
 		clientY: number;
@@ -27,6 +28,8 @@ declare module jQuery {
 		data: any;
 		detail: number;
 		eventPhase: number;
+		key: string;
+		keyCode: number;
 		offsetX: number;
 		offsetY: number;
 		originalTarget: Element;
@@ -34,6 +37,7 @@ declare module jQuery {
 		screenX: number;
 		screenY: number;
 		shiftKey: boolean;
+		toElement: Element;
 		view: Window;
 		
 		originalEvent: Event;
