@@ -1,29 +1,16 @@
 {
-  "name": "@andraaspar/jquery-d-ts-3",
-  "description": "Highly modular type definitions for the jQuery 3 API.",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "rimraf build && tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andraaspar/jquery-d-ts-3.git"
-  },
-  "keywords": [
-    "TypeScript definition",
-    "jQuery 3",
-    "ES6",
-    "export default"
-  ],
-  "author": "András Parditka",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/andraaspar/jquery-d-ts-3/issues"
-  },
-  "homepage": "https://github.com/andraaspar/jquery-d-ts-3",
+  "private": true,
   "devDependencies": {
-    "rimraf": "^2.5.4",
-    "typescript": "^2.0.0"
+    "awesome-typescript-loader": "^2.1.1",
+    "clean-webpack-plugin": "^0.1.10",
+    "html-webpack-plugin": "^2.22.0",
+    "imports-loader": "^0.6.5",
+    "typescript": "^2.0.0",
+    "webpack": "^1.13.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "build-list-modules": "webpack --display-chunks --display-modules",
+    "build-list-reasons": "webpack --display-chunks --display-modules --display-reasons"
   }
 }

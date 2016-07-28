@@ -1,5 +1,6 @@
 /// <reference path='IStatic.d.ts'/>
 
-declare var jQuery: jQuery.IStatic;
-
-export default jQuery;
+declare module 'jquery/dist/jquery' {
+	var jQuery: jQuery.IStatic;
+	export = jQuery;
+}
