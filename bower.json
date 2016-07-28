@@ -1,11 +1,11 @@
 {
-	"name": "jquery-d-ts",
-	"version": "1.1.4",
-	"homepage": "https://github.com/andraaspar/jquery-d-ts",
+	"name": "jquery-d-ts-3",
+	"version": "1.0.0",
+	"homepage": "https://github.com/andraaspar/jquery-d-ts-3",
 	"authors": [
 		"András Parditka"
 	],
-	"description": "TypeScript definitions for jQuery.",
+	"description": "TypeScript definitions for jQuery 3.",
 	"keywords": [
 		"TypeScript",
 		"definitions",
