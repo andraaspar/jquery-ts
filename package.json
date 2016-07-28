@@ -1,5 +1,5 @@
 {
-  "name": "jquery-d-ts-3",
+  "name": "@andraaspar/jquery-d-ts-3",
   "description": "Highly modular type definitions for the jQuery 3 API.",
   "version": "1.0.0",
   "main": "index.js",
