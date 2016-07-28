@@ -1,15 +1,16 @@
 {
 	"name": "jquery-d-ts-3",
+	"description": "Highly modular type definitions for the jQuery 3 API.",
 	"version": "1.0.0",
 	"homepage": "https://github.com/andraaspar/jquery-d-ts-3",
 	"authors": [
 		"András Parditka"
 	],
-	"description": "TypeScript definitions for jQuery 3.",
 	"keywords": [
-		"TypeScript",
-		"definitions",
-		"jQuery"
+		"TypeScript definition",
+		"jQuery 3",
+		"ES6",
+		"export default"
 	],
 	"license": "MIT",
 	"ignore": [

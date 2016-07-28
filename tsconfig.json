@@ -3,10 +3,10 @@
 		"baseUrl": ".",
 		"newLine": "LF",
 		"module": "commonjs",
-		"target": "es5"
+		"target": "es5",
+		"outDir": "build"
 	},
 	"exclude": [
-		"bower_components",
 		"node_modules"
 	]
 }
