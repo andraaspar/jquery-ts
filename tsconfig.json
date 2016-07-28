@@ -2,11 +2,15 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"newLine": "LF",
-		"module": "commonjs",
-		"target": "es5",
-		"outDir": "build"
+		"paths": {
+			"*": [
+				"bower_components/*",
+				"*"
+			]
+		}
 	},
 	"exclude": [
-		"node_modules"
+		"node_modules",
+		"bower_components"
 	]
 }
