@@ -1,0 +1,25 @@
+{
+	"name": "jquery-d-ts",
+	"version": "1.1.4",
+	"homepage": "https://github.com/andraaspar/jquery-d-ts",
+	"authors": [
+		"András Parditka"
+	],
+	"description": "TypeScript definitions for jQuery.",
+	"keywords": [
+		"TypeScript",
+		"definitions",
+		"jQuery"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"build",
+		"lib",
+		"node_modules",
+		"bower_components",
+		"test",
+		"Gruntfile.js",
+		"package.json"
+	]
+}
