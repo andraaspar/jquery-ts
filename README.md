@@ -39,6 +39,17 @@ $(() => {
 
 ### Webpack
 
+`webpack.config.js` will need:
+
+```JavaScript
+resolve: {
+	modulesDirectories: [
+		'bower_components',
+		'node_modules'
+	]
+}
+```
+
 Use `jquery/dist/jquery` to refer to jQuery.
 
 To use a different jQuery path in `webpack.config.js`:
