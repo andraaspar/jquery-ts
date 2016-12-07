@@ -2,7 +2,7 @@
 
 declare module jQuery {
 	export interface IAJAXTransportObject {
-		send(headers: any, completeCallback: IAJAXTransportCompleteFunction);
-		abort();
+		send(headers: any, completeCallback: IAJAXTransportCompleteFunction): any
+		abort(): any
 	}
 }

@@ -2,6 +2,6 @@
 
 declare module jQuery {
 	export interface IAnimationProgressFunction {
-		(animation: IPromise, progress: number, remainingMs: number): any;
+		(animation: IPromise, progress: number, remainingMs: number): any
 	}
 }

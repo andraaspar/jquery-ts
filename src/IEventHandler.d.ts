@@ -2,6 +2,6 @@
 
 declare module jQuery {
 	export interface IEventHandler {
-		(event: IEvent, ...rest): any;
+		(event: IEvent, ...rest: any[]): any
 	}
 }

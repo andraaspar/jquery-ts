@@ -2,6 +2,6 @@
 
 declare module jQuery {
 	export interface IOnEventsObject {
-		[s: string]: IEventHandler;
+		[s: string]: IEventHandler
 	}
 }

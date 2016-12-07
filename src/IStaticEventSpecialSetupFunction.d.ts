@@ -2,6 +2,6 @@
 
 declare module jQuery {
 	export interface IStaticEventSpecialSetupFunction {
-		(data: any, namespaces: string[], eventHandler: IEventHandler): any;
+		(data: any, namespaces: string[], eventHandler: IEventHandler): any
 	}
 }

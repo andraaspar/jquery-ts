@@ -2,6 +2,6 @@
 
 declare module jQuery {
 	export interface IAnimationStepFunction {
-		(now: number, tween: ITween): any;
+		(now: number, tween: ITween): any
 	}
 }

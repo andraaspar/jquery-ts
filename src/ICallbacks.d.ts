@@ -1,27 +1,27 @@
 declare module jQuery {
 	export interface ICallbacks {
-		add(callbacks: Function): ICallbacks;
-		add(callbacks: Function[]): ICallbacks;
+		add(callbacks: Function): ICallbacks
+		add(callbacks: Function[]): ICallbacks
 		
-		disable(): ICallbacks;
+		disable(): ICallbacks
 		
-		disabled(): boolean;
+		disabled(): boolean
 		
-		empty(): ICallbacks;
+		empty(): ICallbacks
 		
-		fire(...arguments): ICallbacks;
+		fire(...arguments: any[]): ICallbacks
 		
-		fired(): boolean;
+		fired(): boolean
 		
-		fireWith(context?: any, args?: any): ICallbacks;
+		fireWith(context?: any, args?: any): ICallbacks
 		
-		has(callback: Function): boolean;
+		has(callback: Function): boolean
 		
-		lock(): ICallbacks;
+		lock(): ICallbacks
 		
-		locked(): boolean;
+		locked(): boolean
 		
-		remove(callbacks: Function): ICallbacks;
-		remove(callbacks: Function[]): ICallbacks;
+		remove(callbacks: Function): ICallbacks
+		remove(callbacks: Function[]): ICallbacks
 	}
 }

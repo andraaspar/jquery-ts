@@ -1,14 +1,14 @@
 declare module jQuery {
 	export interface IReplaceWithFunctionString {
-		(): string;
+		(): string
 	}
 	export interface IReplaceWithFunctionElement {
-		(): Element;
+		(): Element
 	}
 	export interface IReplaceWithFunctionElementArray {
-		(): Element[];
+		(): Element[]
 	}
 	export interface IReplaceWithFunctionInstance {
-		(): IInstance;
+		(): IInstance
 	}
 }
