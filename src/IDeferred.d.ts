@@ -1,37 +1,37 @@
 declare module jQuery {
 	export interface IDeferred extends IPromise {
-		always(callback: Function, ...callbacks: Function[]): IDeferred;
-		always(callback: Function[], ...callbacks: Function[][]): IDeferred;
+		always(callback: Function, ...callbacks: Function[]): IDeferred
+		always(callback: Function[], ...callbacks: Function[][]): IDeferred
 		
-		done(callback: Function, ...callbacks: Function[]): IDeferred;
-		done(callback: Function[], ...callbacks: Function[][]): IDeferred;
+		done(callback: Function, ...callbacks: Function[]): IDeferred
+		done(callback: Function[], ...callbacks: Function[][]): IDeferred
 		
-		fail(callback: Function, ...callbacks: Function[]): IDeferred;
-		fail(callback: Function[], ...callbacks: Function[][]): IDeferred;
-		
-		
-		
-		notify(...args): IDeferred;
-		
-		reject(...args): IDeferred;
-		
-		resolve(...args): IDeferred;
+		fail(callback: Function, ...callbacks: Function[]): IDeferred
+		fail(callback: Function[], ...callbacks: Function[][]): IDeferred
 		
 		
 		
-		notifyWith(context: any, args: any[]): IDeferred;
+		notify(...args: any[]): IDeferred
 		
-		rejectWith(context: any, args: any[]): IDeferred;
+		reject(...args: any[]): IDeferred
 		
-		resolveWith(context: any, args: any[]): IDeferred;
-		
-		
-		
-		progress(callback: Function): IDeferred;
-		progress(callbacks: Function[]): IDeferred;
+		resolve(...args: any[]): IDeferred
 		
 		
 		
-		promise(target?: any): IPromise;
+		notifyWith(context: any, args: any[]): IDeferred
+		
+		rejectWith(context: any, args: any[]): IDeferred
+		
+		resolveWith(context: any, args: any[]): IDeferred
+		
+		
+		
+		progress(callback: Function): IDeferred
+		progress(callbacks: Function[]): IDeferred
+		
+		
+		
+		promise(target?: any): IPromise
 	}
 }

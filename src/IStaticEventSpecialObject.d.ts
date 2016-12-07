@@ -6,10 +6,10 @@
 
 declare module jQuery {
 	export interface IStaticEventSpecialObject {
-		setup?: IStaticEventSpecialSetupFunction;
-		teardown?: IStaticEventSpecialTeardownFunction;
-		add?: IStaticEventSpecialAddFunction;
-		remove?: IStaticEventSpecialAddFunction;
-		_default?: IEventHandler;
+		setup?: IStaticEventSpecialSetupFunction
+		teardown?: IStaticEventSpecialTeardownFunction
+		add?: IStaticEventSpecialAddFunction
+		remove?: IStaticEventSpecialAddFunction
+		_default?: IEventHandler
 	}
 }

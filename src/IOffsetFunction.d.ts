@@ -2,6 +2,6 @@
 
 declare module jQuery {
 	export interface IOffsetFunction {
-		(index: number, coords: IPositionObject): IPositionObject;
+		(index: number, coords: IPositionObject): IPositionObject
 	}
 }

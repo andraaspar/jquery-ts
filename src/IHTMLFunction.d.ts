@@ -1,5 +1,5 @@
 declare module jQuery {
 	export interface IHTMLFunction {
-		(index: number, oldhtml: string): string;
+		(index: number, oldhtml: string): string
 	}
 }

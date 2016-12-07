@@ -6,16 +6,16 @@
 
 declare module jQuery {
 	export interface IAnimationOptions {
-		duration?: any;
-		easing?: string;
-		queue?: any;
-		specialEasing?: ISpecialEasingObject;
-		step?: IAnimationStepFunction;
-		progress?: IAnimationProgressFunction;
-		complete?: Function;
-		start?: IAnimationStartFunction;
-		done?: IAnimationDoneFunction;
-		fail?: IAnimationDoneFunction;
-		always?: IAnimationDoneFunction;
+		duration?: any
+		easing?: string
+		queue?: any
+		specialEasing?: ISpecialEasingObject
+		step?: IAnimationStepFunction
+		progress?: IAnimationProgressFunction
+		complete?: Function
+		start?: IAnimationStartFunction
+		done?: IAnimationDoneFunction
+		fail?: IAnimationDoneFunction
+		always?: IAnimationDoneFunction
 	}
 }

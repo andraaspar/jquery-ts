@@ -2,6 +2,6 @@
 
 declare module jQuery {
 	export interface IAnimationDoneFunction {
-		(animation: IPromise, jumpedToEnd: boolean): any;
+		(animation: IPromise, jumpedToEnd: boolean): any
 	}
 }

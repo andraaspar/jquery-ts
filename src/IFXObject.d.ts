@@ -1,7 +1,7 @@
 declare module jQuery {
 	export interface IFXObject {
-		interval: number;
+		interval: number
 		
-		off: boolean;
+		off: boolean
 	}
 }

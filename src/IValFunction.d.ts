@@ -1,5 +1,5 @@
 declare module jQuery {
 	export interface IValFunction {
-		(index: number, value: string): string;
+		(index: number, value: string): string
 	}
 }
