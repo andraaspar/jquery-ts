@@ -1,5 +1,5 @@
 /// <reference path='src/index.d.ts'/>
 
-import jQuery = require('jquery/dist/jquery');
+import * as jQuery from 'jquery/dist/jquery'
 
-export default jQuery;
+export default jQuery
