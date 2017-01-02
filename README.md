@@ -4,13 +4,16 @@
 - ES6 module compatible.
 - Separate interfaces defined for most objects / functions for easy reusability.
 - Most interface declarations are in separate files for easy browsing.
+- Usable in the Browser and in Node.
 - MIT licensed.
 
 ## Usage
 
+### Bower
+
 Installation:
 ```
-bower install andraaspar/jquery-ts --save
+bower install jquery-ts --save
 ```
 
 Set up `tsconfig.json`:
@@ -30,33 +33,35 @@ Set up `tsconfig.json`:
 
 Then in TypeScript:
 ```TypeScript
-import $ from 'jquery-ts';
+import $ from 'jquery-ts'
 
 $(() => {
-	$('body').append('<h1>Success!</h1>');
-});
+	$('body').append('<h1>Success!</h1>')
+})
 ```
 
-### Webpack
+### Node
 
-`webpack.config.js` will need:
-
-```JavaScript
-resolve: {
-	modulesDirectories: [
-		'bower_components',
-		'node_modules'
-	]
-}
+Installation:
+```
+npm install jquery-ts --save
+npm install jsdom --save
+npm install @types/jsdom --save
 ```
 
-Use `jquery/dist/jquery` to refer to jQuery.
+Then in TypeScript:
+```TypeScript
+import * as jsdom from 'jsdom'
 
-To use a different jQuery path in `webpack.config.js`:
-```JavaScript
-resolve: {
-	alias: {
-		'jquery/dist/jquery': 'jquery/src/jquery'
-	}
-}
+import { initJQuery } from 'jquery-ts'
+
+jsdom.env('<!DOCTYPE html>', (err, window) => {
+	if (err) throw err
+	
+	let $ = initJQuery(window)
+	
+	$('body').append('<h1>Success!</h1>')
+	console.log(jsdom.serializeDocument(window.document))
+	// <!DOCTYPE html><html><head></head><body><h1>Success!</h1></body></html>
+})
 ```

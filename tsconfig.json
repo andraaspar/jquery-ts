@@ -1,13 +1,17 @@
 {
 	"compilerOptions": {
+		"target": "es5",
 		"baseUrl": ".",
-		"newLine": "LF",
 		"paths": {
 			"*": [
 				"bower_components/*",
 				"*"
 			]
 		},
+		"lib": [
+			"es2015",
+			"dom"
+		],
 		"noImplicitAny": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true
