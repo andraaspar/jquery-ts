@@ -1,5 +1,8 @@
+/.gitignore
 /.vscode
-/*.d.ts
-/*.js
+/*.ts
 /bower_components
+/bower.json
 /node_modules
+
+!/*.d.ts

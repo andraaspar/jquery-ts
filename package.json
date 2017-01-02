@@ -1,16 +1,35 @@
 {
-  "private": true,
+  "name": "jquery-ts",
+  "description": "jQuery with highly modular TypeScript type definitions.",
+  "version": "2.1.0",
+  "author": {
+    "name": "András Parditka"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andraaspar/jquery-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andraaspar/jquery-ts/issues"
+  },
+  "homepage": "https://github.com/andraaspar/jquery-ts#readme",
   "devDependencies": {
-    "awesome-typescript-loader": "^2.1.1",
-    "clean-webpack-plugin": "^0.1.10",
-    "html-webpack-plugin": "^2.22.0",
-    "imports-loader": "^0.6.5",
-    "typescript": "^2.0.0",
-    "webpack": "^1.13.1"
+    "@types/jasmine": "2.5.40",
+    "@types/jsdom": "2.0.29",
+    "jasmine": "2.5.2",
+    "jsdom": "9.9.1",
+    "rimraf": "2.5.4",
+    "typescript": "2.1.4"
+  },
+  "dependencies": {
+    "jquery": "^3.0.0"
   },
   "scripts": {
-    "build": "webpack",
-    "build-list-modules": "webpack --display-chunks --display-modules",
-    "build-list-reasons": "webpack --display-chunks --display-modules --display-reasons"
+    "clean": "rimraf *.js *.d.ts",
+    "build": "tsc --declaration",
+    "test": "jasmine",
+    "cleanBuildTest": "npm run clean && npm run build && npm run test"
   }
 }
