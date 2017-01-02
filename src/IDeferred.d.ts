@@ -3,6 +3,8 @@ declare module jQuery {
 		always(callback: Function, ...callbacks: Function[]): IDeferred
 		always(callback: Function[], ...callbacks: Function[][]): IDeferred
 		
+		catch(failFilter: Function): IPromise
+		
 		done(callback: Function, ...callbacks: Function[]): IDeferred
 		done(callback: Function[], ...callbacks: Function[][]): IDeferred
 		

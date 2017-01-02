@@ -12,6 +12,15 @@ describe('jquery-ts', () => {
 			})
 		})
 	})
+	describe('deferred', () => {
+		it('supports the catch method', (done) => {
+			getJQuery().then($ => {
+				let deferred = $.Deferred()
+				deferred.catch(() => done())
+				deferred.reject()
+			})
+		})
+	})
 })
 
 function getJQuery() {
