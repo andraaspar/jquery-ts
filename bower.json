@@ -1,7 +1,7 @@
 {
   "name": "jquery-ts",
   "description": "jQuery with highly modular TypeScript type definitions.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "homepage": "https://github.com/andraaspar/jquery-ts",
   "authors": [
     "András Parditka"
@@ -9,9 +9,10 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "*.js",
-    "*.d.ts",
-    "tests.ts"
+    "/spec",
+    "/*.js",
+    "/*.d.ts",
+    "/tests.ts"
   ],
   "dependencies": {
     "jquery": "^3.0.0"

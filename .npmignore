@@ -4,5 +4,9 @@
 /bower_components
 /bower.json
 /node_modules
+/spec
 
 !/*.d.ts
+
+/tests.d.ts
+/tests.js
